@@ -1,0 +1,114 @@
+/* Reset de estilos para mantener la coherencia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Estilos del encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #007bff, #28a745);
+    color: white;
+    padding: 15px 30px;
+}
+
+header .logo img {
+    height: 80px;
+    width: auto;
+}
+
+header .nav-bar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header .nav-bar li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+header .nav-bar li a:hover {
+    background-color: white;
+    color: #007bff;
+}
+
+/* Estilos del contenido principal */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Carrusel de imágenes */
+.carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-images img {
+    display: none;
+    width: 100%;
+    border-radius: 5px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-images img.active {
+    display: block;
+    opacity: 1;
+}
+
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.carousel button:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.carousel .prev {
+    left: 10px;
+}
+
+.carousel .next {
+    right: 10px;
+}
+
+/* Pie de página */
+footer {
+    background: linear-gradient(90deg, #007bff, #28a745);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+}
